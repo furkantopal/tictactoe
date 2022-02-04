@@ -1,10 +1,19 @@
 import { Example } from "../main/example";
 
 describe("example test", () => {
-  it("should give sum of a + b when adding a and b", () => {
+  it("Placement First"),() => {
     let example: Example = new Example();
-    expect(example.add(1, 2)).toBe(3);
+    expect();
+  });
+  
+  it("X should go first", () => {
+    let example: Example = new Example();
+    expect();
   });
 });
 
 //test
+// place letter,
+//BL, BC, BR
+//ML, MC, MR
+//TL,TC,TR
