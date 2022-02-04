@@ -4,8 +4,8 @@ let invalidStartingGameMove: Move[] = [{ sign: "0", placement: "BL" }];
 
 let invalidMoveBasedOnPreviousSign: Move[] = [
   { sign: "X", placement: "BL" },
-  { sign: "X", placement: "ML" },
-  { sign: "X", placement: "BC" },
+  { sign: "O", placement: "CM" },
+  { sign: "X", placement: "BL" },
   { sign: "0", placement: "BC" },
   { sign: "X", placement: "BR" },
 ];
@@ -29,6 +29,17 @@ describe("TicTacToe test", () => {
     );
   });
 });
+
+//test 1 = if sign array [0] <> X then error
+//test 2 = if sign [current] = sign [previous] then invalid sign
+//test 3 = if placement exists in placement array then "invalid placement"
+//test 4 = if (TL,TM,TR) = sign then "winner"
+//test 5 = if (CL,CM,CR) = sign then "winner"
+//Test 6 = if (BL,BM,BR,) = sign then winner
+//Test 7 = if (TL,CL,BL) = sign then winner
+//Test 8 = if (TR,CR,BR) = sign then winner
+//Test 9 = if (BL,CM,TR) = sign then winner
+//test 10 = if (BR,CM,TL) = sign then winner
 
 //test
 // place letter,
